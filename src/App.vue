@@ -1,11 +1,17 @@
-<template>
-    <div id="app">
-      <div class="red">Hello world</div>
-    </div>
-</template>
+<script setup>
+import { ref } from 'vue'
 
-<style scoped>
-    .red {
-      color: red;
-    }
-</style>
+const name = ref('Vue.js')
+
+function greet(event) {
+  alert(`Hello ${name.value}!`)
+  // `event` is the native DOM event
+  if (event) {
+    alert(event.target.tagName)
+  }
+}
+</script>
+
+<template>
+	<button @click="greet">Greet</button>
+</template>
