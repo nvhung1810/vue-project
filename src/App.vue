@@ -1,11 +1,14 @@
 <template>
     <div id="app">
       <div class="red">Hello world</div>
+      <ReactivityFundamentals />
     </div>
 </template>
 
-<style scoped>
-    .red {
-      color: red;
+<script>
+  export default {
+    components: {
+      ReactivityFundamentals: 'ReactivityFundamentals'
     }
-</style>
+  }
+</script>
