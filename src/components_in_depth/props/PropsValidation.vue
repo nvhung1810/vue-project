@@ -1,0 +1,1 @@
+<!-- Tóm tắt lại là cái này nó check props là kiểu như nào. Khi nào làm thì tìm hiểu nhé -->
